@@ -35,7 +35,7 @@ gulp.task('htmlmin',function(){
 
 gulp.task('watch',function(){
     gulp.watch('src/index.html',['htmlmin']);
-    gulp.watch('src/views/js/app.js',['uglify']);
+    gulp.watch('src/js/app.js',['uglify']);
 });
 
 gulp.task('default',function(){

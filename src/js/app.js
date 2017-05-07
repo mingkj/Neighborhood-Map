@@ -324,7 +324,7 @@ var Place = function (data) {
             }, 5000);
 
             // 使用 flickr API 获取并显示与当前 marker 有关的图片
-            $.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?',
+            $.getJSON('https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?',
                 {
                     tags: that.marker.title,
                     tagmode: 'any',
