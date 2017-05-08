@@ -4,6 +4,7 @@ var infoWindow;
 function initMap() {
 
     // 地图的样式数组
+    // 参考 https://mapstyle.withgoogle.com/
     var styles = [
         {
             "elementType": "geometry",
@@ -171,8 +172,6 @@ function initMap() {
 
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 39.913769, lng: 116.395769},
-        // styles: styles,
-        // mapTypeControl: false,
         mapTypeControlOptions: {
             mapTypeIds: ['styled_map', 'roadmap', 'satellite', 'hybrid', 'terrain'
             ]
