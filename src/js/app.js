@@ -398,7 +398,6 @@ var ViewModel = function () {
     // 搜索文字过滤
     this.searchFilter = ko.computed(function () {
 
-
         // 调整地图的边界
         map.fitBounds(bounds);
         // 关闭信息窗口
