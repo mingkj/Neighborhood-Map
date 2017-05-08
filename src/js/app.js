@@ -380,7 +380,7 @@ var ViewModel = function () {
     this.filterText = ko.observable('');
     this.buttonText = ko.observable('隐藏');
     // 更改按钮的显示文字
-    this.changeButtonText = function (text) {
+    this.changeButtonText = function () {
 
         if (that.buttonText() === '隐藏') {
             that.buttonText('显示');
