@@ -1,7 +1,15 @@
 var map;
 var infoWindow;
 
+// google map 请求错误处理
+var mapRequestTimeout = setTimeout(function () {
+    alert("谷歌地图，请求失败。");
+}, 5000);
+
 function initMap() {
+
+    // 请求成功，清除定时
+    clearTimeout(mapRequestTimeout);
 
     // 地图的样式数组
     // 参考 https://mapstyle.withgoogle.com/
