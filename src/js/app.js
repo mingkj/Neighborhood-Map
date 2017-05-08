@@ -3,7 +3,7 @@ var infoWindow;
 
 // google map 请求错误处理
 var mapRequestTimeout = setTimeout(function () {
-    alert("谷歌地图，请求失败。");
+    alert('谷歌地图，请求失败。');
 }, 5000);
 
 function initMap() {
