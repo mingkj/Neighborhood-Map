@@ -353,14 +353,12 @@ var Place = function (data) {
 
 };
 
-var bounds;
-
 
 var ViewModel = function () {
 
     var that = this;
     this.placeList = ko.observableArray([]);
-    bounds = new google.maps.LatLngBounds();
+    var bounds = new google.maps.LatLngBounds();
 
 
     // 遍历 locations 数组，构造 Place 的数组
